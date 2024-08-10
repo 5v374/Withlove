@@ -51,7 +51,8 @@ a {
   gap: 10px;
 }
 .image-small {
-  width: 100px;
+  width: 9rem;
+  object-fit: cover;
   height: auto;
   cursor: pointer;
 }
