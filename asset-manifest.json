@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Withlove/static/css/main.090cd4b4.css",
+    "main.js": "/Withlove/static/js/main.80f5d92b.js",
+    "static/media/profile.jpg": "/Withlove/static/media/profile.a14141260b8e21f05397.jpg",
+    "static/media/photo2.jpg": "/Withlove/static/media/photo2.9e1da2d8a2d34aa214c1.jpg",
+    "static/media/photo1.jpg": "/Withlove/static/media/photo1.5318c171667ca6e2ad3e.jpg",
+    "static/media/photo4.jpg": "/Withlove/static/media/photo4.0eb84b68a2c01c026764.jpg",
+    "static/media/photo3.jpg": "/Withlove/static/media/photo3.5b79a51dded416d9ddbe.jpg",
+    "index.html": "/Withlove/index.html",
+    "main.090cd4b4.css.map": "/Withlove/static/css/main.090cd4b4.css.map",
+    "main.80f5d92b.js.map": "/Withlove/static/js/main.80f5d92b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.090cd4b4.css",
+    "static/js/main.80f5d92b.js"
+  ]
+}
