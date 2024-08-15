@@ -1,12 +1,24 @@
+
+body {
+  background-color: white;
+  color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: black;
+      color: white;
+  }
+}
 h1 {
   text-align: center;
   margin-top: 20px; 
 }
 
 .App-header {
-  background-color: #2b4a45;
+  background-color: #233b37;
   padding: 20px;
-  color: rgb(0, 0, 0);
+  
   position: relative; 
 }
 
@@ -27,9 +39,7 @@ section {
   margin: 20px 0;
 }
 
-h2 {
-  color: #333;
-}
+
 
 ul {
   list-style-type: none;
