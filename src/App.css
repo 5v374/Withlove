@@ -1,8 +1,18 @@
+:root {
+  --background-color: white;
+  --text-color: black;
+}
+
+[data-theme="dark"] {
+  --background-color: black;
+  --text-color: white;
+}
 
 body {
-  background-color: white;
-  color: black;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
+
 
 h1 {
   text-align: center;
@@ -76,9 +86,4 @@ a {
   max-width: 90%;
   max-height: 90%;
 }
-@media (prefers-color-scheme: dark) {
-  body {
-      background-color: black;
-      color: white;
-  }
-}
+
