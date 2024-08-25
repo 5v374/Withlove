@@ -12,8 +12,17 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
 }
+<<<<<<< HEAD
 
 
+=======
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: black;
+      color: white;
+  }
+}
+>>>>>>> 4001385bab7c6b88cf9696801ab6c5e976740c00
 h1 {
   text-align: center;
   margin-top: 20px; 
