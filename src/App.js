@@ -4,6 +4,7 @@ import About from './components/About';
 import Education from './components/Education';
 import Work from './components/Work';
 import Contacts from './components/Contacts';
+import Film from './components/Film'; 
 import profileImage from './assets/profile.jpg';
 
 function App() {
@@ -16,12 +17,25 @@ function App() {
       <main>
         <About />
         <Education />
+        <Film />
         <Work />
         <Contacts />
       </main>
     </div>
   );
 }
+function applyTheme() {
+  const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  if (isDarkMode) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
+}
+
+applyTheme();
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyTheme);
 
 export default App;
 

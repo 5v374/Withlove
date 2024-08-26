@@ -1,8 +1,18 @@
+:root {
+  --background-color: white;
+  --text-color: black;
+}
+
+[data-theme="dark"] {
+  --background-color: black;
+  --text-color: white;
+}
 
 body {
-  background-color: white;
-  color: black;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
+ 
 
 h1 {
   text-align: center;
@@ -16,15 +26,16 @@ h1 {
   position: relative; 
 }
 
-.profile-image {
-  position: absolute;
-  top: 10px; 
-  left: 10px; 
-  width: 100px; 
-  height: 105px; 
-  border-radius: 10%;
-}
 
+.profile-image {
+  border-radius: 10%;
+  height: 105px;
+  left: 10px;
+  position: absolute;
+  top: 10px;
+  width: 100px;
+  object-fit: cover;
+}
 main {
   padding: 20px;
 }
@@ -76,9 +87,4 @@ a {
   max-width: 90%;
   max-height: 90%;
 }
-@media (prefers-color-scheme: dark) {
-  body {
-      background-color: black;
-      color: white;
-  }
-}
+
