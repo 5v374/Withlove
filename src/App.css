@@ -1,0 +1,91 @@
+:root {
+  --background-color: white;
+  --text-color: black;
+}
+
+[data-theme="dark"] {
+  --background-color: black;
+  --text-color: white;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+
+}
+
+
+h1 {
+  text-align: center;
+  margin-top: 20px; 
+}
+
+.App-header {
+  background-color: #233b37;
+  padding: 20px;
+  
+  position: relative; 
+}
+
+
+.profile-image {
+  border-radius: 10%;
+  height: 105px;
+  left: 10px;
+  position: absolute;
+  top: 10px;
+  width: 100px;
+  object-fit: cover;
+}
+main {
+  padding: 20px;
+}
+
+section {
+  margin: 20px 0;
+}
+
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+a {
+  color: #227b65;
+  text-decoration: none;
+}
+
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.image-small {
+  width: 9rem;
+  object-fit: cover;
+  height: auto;
+  cursor: pointer;
+}
+.photo-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.image-large {
+  max-width: 90%;
+  max-height: 90%;
+}
+
