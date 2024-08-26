@@ -19,8 +19,7 @@ jobs:
           node-version: 22
 
       - name: Build project bundle
-        run: |
-        npm run build
+        run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
