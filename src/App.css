@@ -22,20 +22,17 @@ h1 {
 
 .App-header {
   background-color: #233b37;
-  padding: 20px;
-  
-  position: relative; 
+  padding: 1.5rem;
+  position: relative;
+  display: flex;
+  gap: 1rem;
 }
 
 
 .profile-image {
   border-radius: 10%;
-  height: 105px;
-  left: 10px;
-  position: absolute;
-  top: 10px;
-  width: 100px;
   object-fit: cover;
+  max-height: 5rem;
 }
 main {
   padding: 20px;
