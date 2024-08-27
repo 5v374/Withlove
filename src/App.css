@@ -1,21 +1,17 @@
-:root {
-  --background-color: white;
-  --text-color: black;
-}
-
-[data-theme="dark"] {
-  --background-color: black;
-  --text-color: white;
-}
-
 body {
   background-color: var(--background-color);
   color: var(--text-color);
 
 }
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: black;
+      color: white;
+  }
+}
 
 .App-header {
-  background-color: #233b37;
+  background-color: #3a6a62;
   padding: 1.5rem;
   position: relative;
   display: flex;
@@ -36,8 +32,6 @@ main {
   flex-flow: column;
 }
 
-
-
 ul {
   list-style-type: square;
   padding-left: 1rem;
@@ -48,7 +42,7 @@ li {
 }
 
 a {
-  color: #227b65;
+  color: #2a6254;
   text-decoration: none;
 }
 

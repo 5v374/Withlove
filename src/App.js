@@ -24,18 +24,6 @@ function App() {
     </div>
   );
 }
-function applyTheme() {
-  const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  if (isDarkMode) {
-    document.documentElement.setAttribute('data-theme', 'dark');
-  } else {
-    document.documentElement.setAttribute('data-theme', 'light');
-  }
-}
-
-applyTheme();
-
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', applyTheme);
 
 export default App;
 
