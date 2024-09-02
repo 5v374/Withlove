@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import './Work.css';
 const importAll = (r) => r.keys().map(r);
 const images = importAll(
   require.context("../assets/photos", false, /\.(png|jpe?g|svg)$/)

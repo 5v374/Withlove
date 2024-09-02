@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import AnimatedText from './components/AnimatedText';
 import About from './components/About';
 import Education from './components/Education';
 import Work from './components/Work';
@@ -11,8 +12,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={profileImage} alt="Profile" className="profile-image" />
-        <h1>Withlove</h1>
+      <img src={profileImage} alt="Profile" className="profile-image" />
+        <AnimatedText text="Withlove" />
       </header>
       <main>
         <About />

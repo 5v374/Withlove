@@ -1,0 +1,16 @@
+.animated-text {
+  display: inline-block;
+}
+
+.animated-letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-1rem);
+}
+
+@keyframes fadeInLetters {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
