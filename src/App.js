@@ -1,11 +1,8 @@
 import React from 'react';
 import './App.css';
 import AnimatedText from './components/AnimatedText';
-import About from './components/About';
-import Education from './components/Education';
 import Work from './components/Work';
 import Contacts from './components/Contacts';
-import Film from './components/Film'; 
 import profileImage from './assets/profile.jpg';
 
 function App() {
@@ -13,12 +10,12 @@ function App() {
     <div className="App">
       <header className="App-header">
       <img src={profileImage} alt="Profile" className="profile-image" />
+      <div>
         <AnimatedText text="Withlove" />
+        <p className="about-text">Привет, меня зовут Татьяна. И я видеограф-фотограф.</p>
+        </div>
       </header>
       <main>
-        <About />
-        <Education />
-        <Film />
         <Work />
         <Contacts />
       </main>
