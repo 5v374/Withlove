@@ -1,9 +1,22 @@
 import React, { useState } from "react";
 import "./Work.css";
-const importAll = (r) => r.keys().map(r);
-const images = importAll(
-  require.context("../assets/photos", false, /\.(png|jpe?g|svg)$/)
-);
+
+const images = [
+  "https://res.cloudinary.com/dofxtaas7/image/upload/v1745238437/IMG_20250418_141112_879_fsfhnz.jpg",
+  "https://res.cloudinary.com/dofxtaas7/image/upload/v1745238426/IMG_20250418_141131_810_qkohq9.jpg",
+  "https://res.cloudinary.com/dofxtaas7/image/upload/v1745238418/IMG_20250418_141130_822_mrx3x1.jpg",
+  "https://res.cloudinary.com/dofxtaas7/image/upload/v1745238409/IMG_20250418_141131_696_expcsj.jpg",
+  "https://res.cloudinary.com/dofxtaas7/image/upload/v1745252480/IMG_20250418_141001_201_rykzws.jpg",
+  "https://res.cloudinary.com/dofxtaas7/image/upload/v1745252502/IMG_20250418_141000_799_pormor.jpg",
+  "https://res.cloudinary.com/dofxtaas7/image/upload/v1745253042/photo6_w0ggwg.jpg",
+  "https://res.cloudinary.com/dofxtaas7/image/upload/v1745253132/photo4_s0gpon.jpg",
+  "https://res.cloudinary.com/dofxtaas7/image/upload/v1745253120/photo3_kuo9l9.jpg",
+  "https://res.cloudinary.com/dofxtaas7/image/upload/v1745253554/photo8_i4helv.jpg",
+  "https://res.cloudinary.com/dofxtaas7/image/upload/v1745253535/photo7_ugtded.jpg",
+  "https://res.cloudinary.com/dofxtaas7/image/upload/v1745253543/photo5_dxarhb.jpg",
+  "https://res.cloudinary.com/dofxtaas7/image/upload/v1745253563/photo2_suvbhr.jpg",
+  "https://res.cloudinary.com/dofxtaas7/image/upload/v1744980164/photo1_wzhhtk.jpg"
+]
 
 const Work = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
