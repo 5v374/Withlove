@@ -19,14 +19,7 @@ const images = [
 ]
 
 const Work = () => {
-  const [isVideoOpen, setIsVideoOpen] = useState(false);
   const [selectedPhoto, setSelectedPhoto] = useState(null);
-
-  const toggleSection = (section) => {
-    if (section === "video") {
-      setIsVideoOpen(!isVideoOpen);
-    }
-  };
 
   const openPhoto = (photo) => {
     setSelectedPhoto(photo);
@@ -38,18 +31,18 @@ const Work = () => {
 
   return (
     <section id="work">
-      <h4 onClick={() => toggleSection("video")} style={{ cursor: "pointer" }}>
-        Видео-работы
-      </h4>
-      {isVideoOpen && (
-        <div>
-          <a href="https://disk.yandex.ru/i/oG1b7eciIT8oEw">Саша-видео</a>
-          <br />
-          <a href="https://disk.yandex.ru/d/6s1ItvGQlB6Xfg">Вика-видео</a>
+        <h4>Видео-работы</h4>
+        <div className="video">
+          <iframe
+            src="https://rutube.ru/play/embed/d4224087d2e5491e4be4cf6539572d8d"
+            frameBorder="0"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+            title="Rutube Video"
+          />
         </div>
-      )}
+      
       <h4>Фото-работы</h4>
-
       <div className="photo-grid">
         {images.map((photo, index) => (
           <img

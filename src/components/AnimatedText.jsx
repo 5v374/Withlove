@@ -12,8 +12,8 @@ function AnimatedText({ text }) {
       setLetterStyles(styles);
     }, [text]);
   
-    return (
-      <h1 className="animated-text">
+    /*return (
+      <p className="animated-text">
         {Array.from(text).map((char, index) => (
           <span
             key={index}
@@ -23,8 +23,8 @@ function AnimatedText({ text }) {
             {char}
           </span>
         ))}
-      </h1>
-    );
+      </p>
+    );*/
   }
 
 export default AnimatedText;
