@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Video = () => {
     return (
@@ -14,7 +14,7 @@ const Video = () => {
               />
             </div>
             </section>
-    )
-}
+    );
+};
 
 export default Video;
