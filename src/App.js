@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Video from './components/Video';
 import Work from './components/Work';
 import Contacts from './components/Contacts';
 
@@ -14,6 +15,7 @@ function App() {
         </div>
       </header>
       <main>
+        <Video />
         <Work />
         <Contacts />
       </main>
