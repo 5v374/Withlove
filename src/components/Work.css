@@ -1,5 +1,7 @@
   
   .photo-grid {
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -11,6 +13,8 @@
     cursor: pointer;
   }
   .photo-overlay {
+    justify-content: center;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -18,8 +22,6 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
     display: flex;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
   }
   .image-large {

@@ -1,7 +1,8 @@
 body {
-  background-color: var(--background-color);
+  text-align: center;
+  background: linear-gradient(#0d2d2c, #0f3a3b);
   color: var(--text-color);
-
+  font-style: italic;
 }
 @media (prefers-color-scheme: dark) {
   body {
@@ -11,13 +12,9 @@ body {
 }
 
 .App-header {
-  background-color: #7baaa7;
-  padding: 0rem;
   position: relative;
   display: flex;
-  gap: 1rem;
-  align-items: center;
-  font-size: 1rem;
+  justify-content: center;
 }
 
 
@@ -57,7 +54,7 @@ li {
 }
 
 a {
-  color: #7baaa7;
+  color: #ffffff; 
   text-decoration: none;
 }
 
