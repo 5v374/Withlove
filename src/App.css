@@ -1,14 +1,8 @@
 body {
   text-align: center;
   background: linear-gradient(#0d2d2c, #0f3a3b);
-  color: var(--text-color);
+  color: #ffffff;
   font-style: italic;
-}
-@media (prefers-color-scheme: dark) {
-  body {
-      background-color: black;
-      color: white;
-  }
 }
 
 .App-header {
@@ -25,19 +19,6 @@ body {
   animation: bounceInOut 1s forwards;
 }
 
-@keyframes bounceInOut {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  60% {
-    transform: scale(1.2);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 main {
   padding: 1.5rem;
   display: flex;
